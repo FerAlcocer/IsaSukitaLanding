@@ -1,3 +1,9 @@
+:root {
+  --font-family-primary: "Agbalumo";
+  --color-pink-900: #fb318d;
+  --color-pink-600: #ffcfd2;
+}
+
 *,
 ::before,
 ::after {
@@ -12,6 +18,17 @@ body {
 
 header {
   padding: 0.5em 0;
+}
+
+img {
+  width: 100%;
+}
+
+.logo__img {
+  text-decoration: none;
+  font-family: var(--font-family-primary);
+  color: var(--color-pink-600);
+  font-size: 15px;
 }
 
 .nav__toggle {
@@ -67,4 +84,50 @@ header {
   visibility: hidden;
   height: 0;
   position: absolute;
+}
+
+.tarjeta {
+  margin: 0 1.5rem;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: var(--color-pink-600);
+}
+
+.tarjeta__img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.tarjeta__title {
+  color: black;
+  text-align: center;
+}
+
+.tarjeta__title::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: red;
+}
+
+.tarjeta__title::after {
+  content: "";
+  width: 100%;
+}
+
+.tarjeta__title::after {
+  transform: translateY(15px);
+}
+
+.tarjeta__subtitle {
+  margin-top: 1rem;
+  color: var(--color-pink-900);
 }
